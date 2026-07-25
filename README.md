@@ -91,6 +91,7 @@ agent.perform_action("nothing")
 agent.print_status()
 ```
 ## Output:
+
 <img width="720" height="168" alt="image" src="https://github.com/user-attachments/assets/a1eb6291-b97f-4d19-aa79-bd2a4bacc8c8" />
 
 ## Result:
