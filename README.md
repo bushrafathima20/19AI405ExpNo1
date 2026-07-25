@@ -1,5 +1,5 @@
 <h1>ExpNo 1 :Developing AI Agent with PEAS Description</h1>
-<h3>Name: BUSHRA FATHIMA I N</h3>
+<h3>Name: BUSHRA FATHIMA I </h3>
 <h3>Register Number: 212225040051 </h3>
 
 
