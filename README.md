@@ -1,6 +1,6 @@
 <h1>ExpNo 1 :Developing AI Agent with PEAS Description</h1>
-<h3>Name: Saravanan N</h3>
-<h3>Register Number/Staff Id: TSML006</h3>
+<h3>Name: BUSHRA FATHIMA I N</h3>
+<h3>Register Number: 212225040051 </h3>
 
 
 <h3>AIM:</h3>
@@ -40,3 +40,61 @@
 <p>Treat unhealthy patients in each room. And check for the unhealthy patients in random room</p>
 <h3>STEP 5:</h3>
 <p>Measure the performance parameters: For each treatment performance incremented, for each movement performance decremented</p>
+
+## Program:
+
+import random
+class VacuumCleanerAgent:
+    def __init__(self):
+        self.location = "A"  
+        self.dirt_status = {"A": True, "B": True}  
+        self.performance=0
+    def move_left(self): 
+        if self.location == "B":
+            self.location = "A"
+    def move_right(self):
+        if self.location == "A":
+            self.location = "B"
+    def suck_dirt(self): 
+        if self.dirt_status[self.location]:
+            self.dirt_status[self.location] = False
+            print(f"Sucked dirt in location {self.location}")
+    def do_nothing(self): 
+        pass
+    def perform_action(self, action): 
+        if action == "left":
+            self.performance=self.performance-1
+            self.move_left()
+        elif action == "right":
+            self.performance=self.performance-1
+            self.move_right()
+        elif action == "suck":
+            self.performance=self.performance+10
+            self.suck_dirt()
+        elif action == "nothing":
+            self.do_nothing()
+        else:
+            print("Invalid action")
+    def print_status(self): 
+        print(f"Location: {self.location}, Dirt Status: {self.dirt_status}, ",end="")
+        print(f"Perfomance Measure: {self.performance}")
+# Example usage:
+agent = VacuumCleanerAgent()
+# Move the agent, suck dirt, and do nothing
+agent.perform_action("left")
+agent.print_status()
+agent.perform_action("suck")
+agent.print_status()
+agent.perform_action("right")
+agent.print_status()
+agent.perform_action("suck")
+agent.print_status()
+agent.perform_action("nothing")
+agent.print_status()
+
+## Output:
+<img width="720" height="168" alt="image" src="https://github.com/user-attachments/assets/a1eb6291-b97f-4d19-aa79-bd2a4bacc8c8" />
+
+## Result:
+Thus the developing AI Agent with PEAS Description was implemented using Python Programming Successfully.
+
